@@ -56,9 +56,6 @@
     <Folder Include="AgeApp\userages\" />
     <Folder Include="AgeApp\userages\migrations\" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="AgeApp\db.sqlite3" />
-  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
        Visual Studio and specify your pre- and post-build commands in
