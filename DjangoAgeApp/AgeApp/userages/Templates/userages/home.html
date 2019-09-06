@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>M*Modal Age Histogram app</title>
+    {% load static %}
+    <script src="{% static 'userages/js/Chart.min.js' %}"></script>
+    <script src="{% static 'userages/js/ageHistogram.js' %}"></script>
+    <script src="{% static 'userages/js/jquery-3.3.1.min.js' %}"></script>
+
+</head>
+<body>
+    <h1>Welcome, {{ name }}! Your age is {{ age }}</h1>
+
+    <div class="jumbotron">
+        <h1>Age App</h1>
+        <p class="lead">This is a pre-interview assesment for M*Modal.</p>
+        <p><a href="https://mmodal.com" class="btn btn-primary btn-lg">This is their website &raquo;</a></p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-offset-2 col-md-8">
+            <canvas id="ageHistogram" width="600" height="400"></canvas>
+        </div>
+    </div>
+</body>
+</html>

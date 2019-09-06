@@ -36,6 +36,9 @@
     <Compile Include="AgeApp\userages\migrations\__init__.py" />
     <Compile Include="AgeApp\userages\models.py" />
     <Compile Include="AgeApp\userages\tests.py" />
+    <Compile Include="AgeApp\userages\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="AgeApp\userages\views.py" />
     <Compile Include="AgeApp\userages\__init__.py" />
   </ItemGroup>
@@ -53,8 +56,20 @@
   <ItemGroup>
     <Folder Include="AgeApp\" />
     <Folder Include="AgeApp\AgeApp\" />
+    <Folder Include="AgeApp\static\" />
+    <Folder Include="AgeApp\static\userages\" />
+    <Folder Include="AgeApp\static\userages\js\" />
+    <Folder Include="AgeApp\userages\Templates\" />
     <Folder Include="AgeApp\userages\" />
     <Folder Include="AgeApp\userages\migrations\" />
+    <Folder Include="AgeApp\userages\Templates\userages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AgeApp\AgeApp\Templates\home.html" />
+    <Content Include="AgeApp\static\userages\js\ageHistogram.js" />
+    <Content Include="AgeApp\static\userages\js\Chart.min.js" />
+    <Content Include="AgeApp\static\userages\js\jquery-3.3.1.min.js" />
+    <Content Include="AgeApp\userages\Templates\userages\home.html" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
