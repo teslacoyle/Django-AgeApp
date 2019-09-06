@@ -33,6 +33,9 @@
     <Compile Include="AgeApp\manage.py" />
     <Compile Include="AgeApp\userages\admin.py" />
     <Compile Include="AgeApp\userages\apps.py" />
+    <Compile Include="AgeApp\userages\forms.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="AgeApp\userages\migrations\__init__.py" />
     <Compile Include="AgeApp\userages\models.py" />
     <Compile Include="AgeApp\userages\tests.py" />
@@ -56,6 +59,7 @@
   <ItemGroup>
     <Folder Include="AgeApp\" />
     <Folder Include="AgeApp\AgeApp\" />
+    <Folder Include="AgeApp\AgeApp\Templates\" />
     <Folder Include="AgeApp\static\" />
     <Folder Include="AgeApp\static\userages\" />
     <Folder Include="AgeApp\static\userages\js\" />
@@ -70,6 +74,7 @@
     <Content Include="AgeApp\static\userages\js\Chart.min.js" />
     <Content Include="AgeApp\static\userages\js\jquery-3.3.1.min.js" />
     <Content Include="AgeApp\userages\Templates\userages\home.html" />
+    <Content Include="AgeApp\userages\Templates\userages\login.html" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

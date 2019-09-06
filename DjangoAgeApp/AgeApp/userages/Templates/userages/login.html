@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <form role="form" action="{% url 'userages_login'%}" method="post">
+        {% csrf_token %}
+        <p>Please Log in.</p>
+
+        {{ form }}
+        <input type="submit" class="btn btn-success" value="Sign in" />
+    </form>
+
+    <a href="#">Click here to register as a new user!! (TODO)</a>
+
+</body>
+</html>

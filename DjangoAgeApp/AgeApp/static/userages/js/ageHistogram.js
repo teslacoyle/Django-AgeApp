@@ -1,20 +1,25 @@
-$(document).ready(function () {
-    var chartCanvas = $('#ageHistogram');
+
+buildChart = function (axisLabels, axisValues, colorValues) {
+    var chartCanvas = $("#ageHistogram");
     var ageHist = new Chart(chartCanvas, {
         type: 'bar',
         data: {
-            labels: [axisLabels],
+            labels: axisLabels,
             datasets: [{
                 label: "Age",
-                data: [axisValues],
-                backgroundColor: [Html.Raw(colorValues)]
+                data: axisValues,
+                backgroundColor: colorValues
             }]
         },
         options: {
+            title: {
+                display: true,
+                text: 'User Age Histogram'
+            },
+            legend: {
+                display: false
+            },
             scales: {
-                xAxes: [{
-                    barPercentage: 1.0
-                }],
                 yAxes: [{
                     ticks: {
                         beginAtZero: true,
@@ -27,4 +32,5 @@ $(document).ready(function () {
             }
         }
     });
-});
+};
+
