@@ -93,6 +93,7 @@
     <Content Include="AgeApp\userages\Templates\userages\home.html" />
     <Content Include="AgeApp\userages\templates\base.html" />
     <Content Include="AgeApp\userages\Templates\userages\login.html" />
+    <Content Include="AgeApp\userages\Templates\userages\register.html" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
