@@ -62,18 +62,36 @@
     <Folder Include="AgeApp\AgeApp\Templates\" />
     <Folder Include="AgeApp\static\" />
     <Folder Include="AgeApp\static\userages\" />
+    <Folder Include="AgeApp\static\userages\css\" />
+    <Folder Include="AgeApp\static\userages\fonts\" />
+    <Folder Include="AgeApp\static\userages\img\" />
     <Folder Include="AgeApp\static\userages\js\" />
-    <Folder Include="AgeApp\userages\Templates\" />
+    <Folder Include="AgeApp\userages\templates\" />
     <Folder Include="AgeApp\userages\" />
     <Folder Include="AgeApp\userages\migrations\" />
     <Folder Include="AgeApp\userages\Templates\userages\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AgeApp\AgeApp\Templates\home.html" />
+    <Content Include="AgeApp\static\userages\css\bootstrap-theme.css" />
+    <Content Include="AgeApp\static\userages\css\bootstrap-theme.css.map" />
+    <Content Include="AgeApp\static\userages\css\bootstrap-theme.min.css" />
+    <Content Include="AgeApp\static\userages\css\bootstrap.css" />
+    <Content Include="AgeApp\static\userages\css\bootstrap.css.map" />
+    <Content Include="AgeApp\static\userages\css\bootstrap.min.css" />
+    <Content Include="AgeApp\static\userages\css\main.css" />
+    <Content Include="AgeApp\static\userages\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="AgeApp\static\userages\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="AgeApp\static\userages\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="AgeApp\static\userages\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="AgeApp\static\userages\img\favicon.ico" />
     <Content Include="AgeApp\static\userages\js\ageHistogram.js" />
+    <Content Include="AgeApp\static\userages\js\bootstrap.js" />
+    <Content Include="AgeApp\static\userages\js\bootstrap.min.js" />
     <Content Include="AgeApp\static\userages\js\Chart.min.js" />
     <Content Include="AgeApp\static\userages\js\jquery-3.3.1.min.js" />
+    <Content Include="AgeApp\userages\Templates\userages\404.html" />
     <Content Include="AgeApp\userages\Templates\userages\home.html" />
+    <Content Include="AgeApp\userages\templates\base.html" />
     <Content Include="AgeApp\userages\Templates\userages\login.html" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />

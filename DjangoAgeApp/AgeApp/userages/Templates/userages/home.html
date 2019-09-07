@@ -1,45 +1,17 @@
-﻿<!DOCTYPE html>
+﻿{% extends "base.html" %}
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title>M*Modal Age Histogram app</title>
-
+{% block scripts %}
     {% load static %}
-    <script src="{% static 'userages/js/jquery-3.3.1.min.js' %}" type="text/javascript"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="{% static 'userages/js/Chart.min.js' %}" type="text/javascript"></script>
     <script src="{% static 'userages/js/ageHistogram.js' %}" type="text/javascript"></script>
+{% endblock %}
 
-</head>
-<body>
-    
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <h2 class="navbar-brand">Welcome, {{ name }}! <small>Your age is {{ age }}.</small></h2>
+{% block content %}
 
-            </div>
-            {% if user.is_authenticated %}
-                <a class="btn btn-primary mr-sm-2" href="{% url 'userages_logout' %}"> Log Out</a>
-            {% else %}
-                <a class="btn btn-primary mr-sm-2" href="{% url 'userages_login' %}"> Log In</a>
-            {% endif %}
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+            <canvas id="ageHistogram" width="600" height="400"></canvas>
         </div>
-    </div>
-    <div class="container body-content">
-        <div class="row justify-content-center">
-            <div class="col-md-12">
-                <canvas id="ageHistogram" width="600" height="400"></canvas>
-            </div>
-        </div>
-
-        <footer>
-            <div class="container">
-                &copy; 2019 Eli Coyle
-            </div>
-        </footer>
     </div>
 
     <script type="text/javascript">
@@ -49,5 +21,4 @@
 
         $(document).ready(buildChart(axisLabels, axisValues, colorValues));
     </script>
-</body>
-</html>
+{% endblock %}
