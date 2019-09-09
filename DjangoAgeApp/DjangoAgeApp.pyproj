@@ -72,6 +72,7 @@
     <Folder Include="AgeApp\userages\Templates\userages\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AgeApp\db.sqlite3" />
     <Content Include="AgeApp\static\userages\css\bootstrap-theme.css" />
     <Content Include="AgeApp\static\userages\css\bootstrap-theme.css.map" />
     <Content Include="AgeApp\static\userages\css\bootstrap-theme.min.css" />
